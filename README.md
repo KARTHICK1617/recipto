@@ -1,1 +1,2 @@
 # recipto
+I implemented the Provider package to manage the application state. The data follows a Repository → State → UI flow: a mock JSON (Repository) is parsed into a model and loaded into the VoucherProvider (State), which calculates the business logic and exposes it to the VoucherScreen (UI). This ensures that the UI remains purely declarative and reactively updates whenever the state changes.
